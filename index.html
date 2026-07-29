@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> 10𝑻𝒉 𝑴𝒂𝒏 𝑱𝒂𝒄𝒌𝒑𝒐𝒕 𝑲𝒊𝒏𝒈™ </title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+  body {
+    background: linear-gradient(135deg, #000000, #111111, #1a1a1a);
+    font-family: 'Poppins', sans-serif;
+  }
+
+  /* Glass effect */
+  .glass {
+    background: rgba(255, 215, 0, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 215, 0, 0.2);
+  }
+
+  /* Glow animation */
+  @keyframes glow {
+    0% { box-shadow: 0 0 10px rgba(255,255,255,0.2); }
+    50% { box-shadow: 0 0 30px rgba(255,255,255,0.4); }
+    100% { box-shadow: 0 0 10px rgba(255,255,255,0.2); }
+  }
+
+  /* Smooth scale */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+  }
+
+  .cta-btn {
+    animation: glow 2s infinite;
+    transition: all 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    transform: scale(1.08);
+    background: #ffffff;
+    color: #000;
+  }
+
+  .logo-anim {
+    animation: float 3s ease-in-out infinite;
+  }
+</style>
+</head>
+
+<body class="text-white">
+
+<div class="min-h-screen flex items-center justify-center px-4">
+
+  <div class="glass p-8 rounded-3xl text-center max-w-md w-full shadow-2xl">
+
+    <!-- Logo -->
+    <img src="logo.jpg" class="w-24 h-24 mx-auto rounded-full border border-white/20 shadow-lg logo-anim">
+
+    <!-- Heading -->
+    <h1 class="text-3xl font-bold mt-5 tracking-wide text-yellow-500">
+       10𝑻𝒉 𝑴𝒂𝒏 𝑱𝒂𝒄𝒌𝒑𝒐𝒕 𝑲𝒊𝒏𝒈™ 
+
+    </h1>
+
+    <p class="mt-2 text-gray-400 text-sm">
+       TOSS • MATCH • PREDICT!ON • SES!SON 
+    </p>
+
+    <!-- Divider -->
+    <div class="w-16 h-[2px] bg-white mx-auto my-4 opacity-30"></div>
+
+    <!-- Countdown -->
+    <div class="mt-3 text-sm text-gray-300">
+      ⏳ Limited Free Joining
+      <span id="countdown" class="text-xl font-bold mx-2 text-white"></span>
+      Seconds Left
+    </div>
+
+    <!-- Info Box -->
+    <!-- <div class="mt-5 bg-white/5 p-4 rounded-xl border border-white/10">
+      <p class="text-sm text-gray-300 leading-relaxed">
+        Get structured match insights, performance trends, and data-backed analysis for upcoming tennis matches.
+      </p>
+    </div> -->
+
+    <!-- CTA -->
+    <div class="mt-6 flex justify-center">
+      <a href="https://t.me/+Y2hB1ghjE20wNGI1" target="_blank" rel="noopener noreferrer"  >
+        <button class="cta-btn px-8 py-5 rounded-xl font-semibold border-2 border-white text-black bg-yellow-400 flex items-center gap-3 font-serif font-bold">
+          <img src="telegram.jpg" class="w-6 h-6 rounded-full">
+          JOIN MY TELEGRAM CHANNEL
+        </button>
+      </a>
+    </div>
+    
+
+    <!-- Footer -->
+    <p class="mt-5 text-xs text-gray-500 leading-relaxed">
+      This platform is for informational purposes only. We do not promote any betting or gambling activity.
+    </p>
+
+  </div>
+
+</div>
+<!-- Fixed Top Right Box -->
+<div id="adsSetupBox">
+    <div class="title">Ads Setup By</div>
+
+    <a href="https://t.me/+OqzG0AZ_MTtmOGE1" target="_blank" class="blink-btn">
+        Saurabh9xz
+    </a>
+</div>
+
+
+<style>
+#adsSetupBox{
+    position:fixed;
+    bottom:2px;
+    right:2px;
+    z-index:99999;
+
+    background:rgba(0, 0, 0, 0);
+    backdrop-filter:blur(8px);
+
+    padding:2px 1px;
+    border-radius:10px;
+    text-align:center;
+
+    box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+
+#adsSetupBox .title{
+    color:#fff;
+    font-size:10px;
+    margin-bottom:-5px;
+    font-family:Arial,sans-serif;
+}
+
+.blink-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    font-weight:bold;
+    font-size:8px;
+
+    padding:2px 4px;
+    border-radius:20px;
+
+    animation:blinkColor 3s infinite;
+}
+
+@keyframes blinkColor{
+    0%{
+        background:#ff0000;
+        box-shadow:0 0 8px #ff0000;
+    }
+    20%{
+        background:#ff9800;
+        box-shadow:0 0 8px #ff9800;
+    }
+    40%{
+        background:#00c853;
+        box-shadow:0 0 8px #00c853;
+    }
+    60%{
+        background:#2196f3;
+        box-shadow:0 0 8px #2196f3;
+    }
+    80%{
+        background:#9c27b0;
+        box-shadow:0 0 8px #9c27b0;
+    }
+    100%{
+        background:#ff0000;
+        box-shadow:0 0 8px #ff0000;
+    }
+}
+</style>
+
+<script>
+let timeLeft = 25;
+const countdownElement = document.getElementById('countdown');
+
+setInterval(() => {
+  countdownElement.textContent = timeLeft;
+  timeLeft--;
+
+  if (timeLeft < 0) {
+    timeLeft = 25;
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
