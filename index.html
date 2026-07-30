@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-<head><script>
+<head><!-- Meta Pixel Code -->
+<script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -9,206 +10,274 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '984524167963536');
+fbq('init', '913637855126469');
 fbq('track', 'PageView');
 </script>
 <noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=984524167963536&ev=PageView&noscript=1"
+src="https://www.facebook.com/tr?id=913637855126469&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10𝑻𝒉 𝑴𝒂𝒏 𝑱𝒂𝒄𝒌𝒑𝒐𝒕 𝑲𝒊𝒏𝒈™
+</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> 10𝑻𝒉 𝑴𝒂𝒏 𝑱𝒂𝒄𝒌𝒑𝒐𝒕 𝑲𝒊𝒏𝒈™ </title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <style>
+        :root {
+            --primary: #6d320e;
+            --secondary: #0a3a49;
+            --accent: #9a2910;
+            --bg: #020617;
+            --text: #e5e7eb;
+        }
 
-<script src="https://cdn.tailwindcss.com"></script>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
 
-<style>
-  body {
-    background: linear-gradient(135deg, #000000, #111111, #1a1a1a);
-    font-family: 'Poppins', sans-serif;
-  }
+        body {
+            background: radial-gradient(1200px 600px at top, var(--secondary), var(--bg));
+            color: var(--text);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
 
-  /* Glass effect */
-  .glass {
-    background: rgba(255, 215, 0, 0.05);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 215, 0, 0.2);
-  }
+        .bg-blur {
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+        }
 
-  /* Glow animation */
-  @keyframes glow {
-    0% { box-shadow: 0 0 10px rgba(255,255,255,0.2); }
-    50% { box-shadow: 0 0 30px rgba(255,255,255,0.4); }
-    100% { box-shadow: 0 0 10px rgba(255,255,255,0.2); }
-  }
+        .bg-blur span {
+            position: absolute;
+            width: 280px;
+            height: 280px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            filter: blur(120px);
+            opacity: .35;
+            animation: float 12s infinite alternate ease-in-out;
+        }
 
-  /* Smooth scale */
-  @keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-6px); }
-    100% { transform: translateY(0px); }
-  }
+        .bg-blur span:nth-child(1) {
+            top: 10%;
+            left: 5%;
+        }
 
-  .cta-btn {
-    animation: glow 2s infinite;
-    transition: all 0.3s ease;
-  }
+        .bg-blur span:nth-child(2) {
+            bottom: 15%;
+            right: 10%;
+            animation-delay: 3s;
+        }
 
-  .cta-btn:hover {
-    transform: scale(1.08);
-    background: #ffffff;
-    color: #000;
-  }
+        @keyframes float {
+            from {
+                transform: translateY(0)
+            }
 
-  .logo-anim {
-    animation: float 3s ease-in-out infinite;
-  }
-</style>
+            to {
+                transform: translateY(-60px)
+            }
+        }
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 24px;
+        }
+
+        .card {
+            max-width: 520px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.06);
+            backdrop-filter: blur(14px);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 28px;
+            padding: 36px 28px 32px;
+            text-align: center;
+            box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+            animation: cardIn .9s ease-out;
+        }
+
+        @keyframes cardIn {
+            from {
+                opacity: 0;
+                transform: translateY(40px) scale(.96)
+            }
+
+            to {
+                opacity: 1;
+                transform: none
+            }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 8px 16px;
+            border-radius: 999px;
+            background: rgba(34, 197, 94, .15);
+            color: #86efac;
+            font-size: 13px;
+            margin-bottom: 16px;
+        }
+
+        /* Center circular image on top */
+        .card .heading-img {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 20px;
+            border-radius: 50%;
+            display: block;
+            object-fit: cover;
+            animation: imgFade 1s ease-out;
+        }
+
+        @keyframes imgFade {
+            from {
+                opacity: 0;
+                transform: translateY(-20px)
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0)
+            }
+        }
+
+        h1 {
+            font-size: 40px;
+            line-height: 1.1;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+
+        .sub {
+            font-size: 15px;
+            opacity: .85;
+            margin-bottom: 26px;
+            /* font-style:italic; */
+            background-color: yellow;
+            border-radius:4px;
+            border:1px solid black;
+            padding:4px 0px ;
+            color:black;
+            padding:0px 2px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+
+        .timer {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .timer span {
+            font-weight: 700;
+            color: #86efac;
+            font-size: 18px;
+        }
+
+        .cta {
+            display: flex;
+            justify-content: center;
+        }
+
+        a.button {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 16px 26px;
+            border-radius: 16px;
+            background: linear-gradient(135deg, var(--primary), var(--accent));
+            color: #ffffff;
+            font-weight: 800;
+            text-decoration: none;
+            border: 2px solid white;
+            box-shadow: 0 20px 40px rgba(34, 197, 94, .45);
+            transform: translateZ(0);
+            transition: .3s ease;
+        }
+
+        a.button:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 28px 60px rgba(101, 13, 13, 0.65);
+        }
+
+        .note {
+            margin-top: 18px;
+            font-size: 13px;
+            opacity: .75;
+        }
+
+        .disclaimer {
+            margin-top: 22px;
+            padding-top: 16px;
+            border-top: 1px dashed rgba(255, 255, 255, .25);
+            font-size: 12px;
+            line-height: 1.6;
+            opacity: .75;
+        }
+
+        @media(max-width:480px) {
+            h1 {
+                font-size: 22px
+            }
+
+            .card {
+                padding: 30px 20px
+            }
+
+            .card .heading-img {
+                width: 100px;
+                height: 100px
+            }
+        }
+    </style>
 </head>
 
-<body class="text-white">
+<body>
+    <div class="hero">
+        <div class="bg-blur">
+            <span></span>
+            <span></span>
+        </div>
+        <div class="card">
+             <!-- Center circular image on top of heading -->
+            <!-- <img src="logo.jpg" alt="cricket Illustration" class="heading-img" style="border: 2px solid rgb(255, 221, 0);"> -->
+            <h1>10𝑻𝒉 𝑴𝒂𝒏 𝑱𝒂𝒄𝒌𝒑𝒐𝒕 𝑲𝒊𝒏𝒈™
+</h1>
+            <p class="sub">Accurate analysis • Match Update • Right Pred!ction</p>
+            <div class="timer">FREE JOINING ENDS IN <span id="countdown">30</span>s</div>
+            <div class="cta">
+                <a href="https://t.me/+Y2hB1ghjE20wNGI1" target="_blank"  class="button"  >JOIN TELEGRAM FOR NEW UPDATE <i
+                        class="fa fa-telegram"></i></a>
+            </div>
+  
+           
+            <div class="disclaimer">Disclaimer: This channel shares cricket updates, analysis, and general information
+                for fans. It does not promote betting or gambling. No outcomes are guaranteed. Please verify
+                independently and act responsibly.</div>
 
-<div class="min-h-screen flex items-center justify-center px-4">
-
-  <div class="glass p-8 rounded-3xl text-center max-w-md w-full shadow-2xl">
-
-    <!-- Logo -->
-    <img src="logo.jpg" class="w-24 h-24 mx-auto rounded-full border border-white/20 shadow-lg logo-anim">
-
-    <!-- Heading -->
-    <h1 class="text-3xl font-bold mt-5 tracking-wide text-yellow-500">
-       10𝑻𝒉 𝑴𝒂𝒏 𝑱𝒂𝒄𝒌𝒑𝒐𝒕 𝑲𝒊𝒏𝒈™ 
-
-    </h1>
-
-    <p class="mt-2 text-gray-400 text-sm">
-       TOSS • MATCH • PREDICT!ON • SES!SON 
-    </p>
-
-    <!-- Divider -->
-    <div class="w-16 h-[2px] bg-white mx-auto my-4 opacity-30"></div>
-
-    <!-- Countdown -->
-    <div class="mt-3 text-sm text-gray-300">
-      ⏳ Limited Free Joining
-      <span id="countdown" class="text-xl font-bold mx-2 text-white"></span>
-      Seconds Left
+                   <!--  my link -->    <a href="https://t.me/+OqzG0AZ_MTtmOGE1" class="" style="  text-decoration: none;  padding:4px 2px; display:flex; place-items:center; place-content:center; " > <div class=""  style="padding:4px 2px; display:flex; place-items:center; place-content:center; " ><p class="" style="color:white;  text-decoration: none; margin-right:4px; " >Ads by</p><b class="text-blue-300">Saurabh9xz</b></div></a>
+        </div>
+        
     </div>
-
-    <!-- Info Box -->
-    <!-- <div class="mt-5 bg-white/5 p-4 rounded-xl border border-white/10">
-      <p class="text-sm text-gray-300 leading-relaxed">
-        Get structured match insights, performance trends, and data-backed analysis for upcoming tennis matches.
-      </p>
-    </div> -->
-
-    <!-- CTA -->
-    <div class="mt-6 flex justify-center">
-      <a href="https://t.me/+Y2hB1ghjE20wNGI1" target="_blank" rel="noopener noreferrer"  >
-        <button class="cta-btn px-8 py-5 rounded-xl font-semibold border-2 border-white text-black bg-yellow-400 flex items-center gap-3 font-serif font-bold">
-          <img src="telegram.jpg" class="w-6 h-6 rounded-full">
-          JOIN MY TELEGRAM CHANNEL
-        </button>
-      </a>
-    </div>
-    
-
-    <!-- Footer -->
-    <p class="mt-5 text-xs text-gray-500 leading-relaxed">
-      This platform is for informational purposes only. We do not promote any betting or gambling activity.
-    </p>
-
-  </div>
-
-</div>
-<!-- Fixed Top Right Box -->
-<div id="adsSetupBox">
-    <div class="title">Ads Setup By</div>
-
-    <a href="https://t.me/+OqzG0AZ_MTtmOGE1" target="_blank" class="blink-btn">
-        Saurabh9xz
-    </a>
-</div>
-
-
-<style>
-#adsSetupBox{
-    position:fixed;
-    bottom:2px;
-    right:2px;
-    z-index:99999;
-
-    background:rgba(0, 0, 0, 0);
-    backdrop-filter:blur(8px);
-
-    padding:2px 1px;
-    border-radius:10px;
-    text-align:center;
-
-    box-shadow:0 0 10px rgba(0,0,0,.3);
-}
-
-#adsSetupBox .title{
-    color:#fff;
-    font-size:10px;
-    margin-bottom:-5px;
-    font-family:Arial,sans-serif;
-}
-
-.blink-btn{
-    display:inline-block;
-    text-decoration:none;
-    color:#fff;
-    font-weight:bold;
-    font-size:8px;
-
-    padding:2px 4px;
-    border-radius:20px;
-
-    animation:blinkColor 3s infinite;
-}
-
-@keyframes blinkColor{
-    0%{
-        background:#ff0000;
-        box-shadow:0 0 8px #ff0000;
-    }
-    20%{
-        background:#ff9800;
-        box-shadow:0 0 8px #ff9800;
-    }
-    40%{
-        background:#00c853;
-        box-shadow:0 0 8px #00c853;
-    }
-    60%{
-        background:#2196f3;
-        box-shadow:0 0 8px #2196f3;
-    }
-    80%{
-        background:#9c27b0;
-        box-shadow:0 0 8px #9c27b0;
-    }
-    100%{
-        background:#ff0000;
-        box-shadow:0 0 8px #ff0000;
-    }
-}
-</style>
-
-<script>
-let timeLeft = 25;
-const countdownElement = document.getElementById('countdown');
-
-setInterval(() => {
-  countdownElement.textContent = timeLeft;
-  timeLeft--;
-
-  if (timeLeft < 0) {
-    timeLeft = 25;
-  }
-}, 1000);
-</script>
-
+     <script>
+        let remainingSeconds = 35;
+        const el = document.getElementById('countdown');
+        function tick() { el.textContent = remainingSeconds; remainingSeconds--; if (remainingSeconds < 0) remainingSeconds = 20; }
+        tick();
+        setInterval(tick, 1000);
+    </script>
 </body>
+
 </html>
+
+
